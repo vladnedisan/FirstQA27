@@ -28,6 +28,7 @@ public class Main {
         double divide= nr2/nr1;
         System.out.println("The result of dividing nr2 by nr 1 is: "+divide);
         System.out.println( '\n' );
+
         // Ex 4 - Printing the results of some operations
         System.out.println("Homework Lab9 -Java- Ex 4 - Results of some operations ");
         System.out.println( '\n' );
@@ -73,9 +74,9 @@ public class Main {
         double operationc= c1+c2*c3/c4;
         System.out.println("The result of operation : 20 + -3*5/8 is: "+operationc);
         System.out.println( '\n' );
+
         // d. 5 + 15 / 3 * 2 - 8 % 3
         System.out.println("d. Result of : 5 + 15 / 3 * 2 - 8 % 3 ");
-        // c. 5 + 15 / 3 * 2 - 8 % 3
         System.out.println( '\n' );
         double d1=5;
         System.out.println("First number is : 5 ");
