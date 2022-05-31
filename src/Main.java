@@ -11,9 +11,9 @@ public class Main {
         // Ex 2 - sum of two numbers
         System.out.println("Homework Lab9 -Java- Ex 2 - Sum of 2 numbers ");
         System.out.println( '\n' );
-    int number1=6;
+        int number1=6;
         System.out.println("First number is : 6 ");
-    double number2= 7.5;
+        double number2= 7.5;
         System.out.println("Second number is : 7.5 ");
         double sum= number1+number2;
         System.out.println("The sum of the numbers is: "+sum);
