@@ -1,8 +1,10 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        // Ex 1 - Print Hello
-        System.out.println('\n');
+        // Tema Laborator 9 -  Ex 1 - Print Hello
+     /*   System.out.println('\n');
         System.out.println("Homework Lab9 - Java - Ex 1 - Print Hello");
         System.out.println('\n');
         System.out.println("Hello Q27 World");
@@ -22,7 +24,7 @@ public class Main {
         System.out.println("Homework Lab9 - Java - Ex 3 - Result of dividing two numbers ");
         System.out.println('\n');
         int nr1 = 3;
-        System.out.println("First number is :" + nr1 );
+        System.out.println("First number is : " + nr1 );
         double nr2 = 4.5;
         System.out.println("Second number is : " + nr2 );
         double divide = nr2 / nr1;
@@ -92,5 +94,87 @@ public class Main {
         double operationD = d1 + d2 / d3 * d4 - d5 % d6;
         System.out.println('\n');
         System.out.println("The result of operation : 5 + 15 / 3 * 2 - 8 % 3  is : " + operationD);
+        */
+// Tema Laborator 10
+       System.out.println("Tema nr 2 : \n");
+
+       Sum suma = new Sum();
+       System.out.println("Suma numerelor este : " +(suma.sum(3,4)) );
+
+       Substract substr = new Substract();
+       System.out.println("Scaderea numerelor este : " +(substr.substract(9, 7)) );
+
+       Divide imp = new Divide();
+       System.out.println("Impartirea numerelor este : " + (imp.divide(9,2)));
+
+       Multiplication inm = new Multiplication();
+       System.out.println("Inmultirea numerelor este : " + (inm.multiplication(4,5))+ "\n");
+
+       System.out.println("Tema nr 3 : \n");
+       PrintJ print = new PrintJ();
+       System.out.println(print.PrintJava()+'\n');
+
+       System.out.println("Tema nr 4 : \n");
+       //  import java.util.Scanner;
+       // public static void main (String [] args ) {
+       Scanner scan = new Scanner(System.in);
+       System.out.println( "Introduceti primul numar : ");
+       int firstNumber = scan.nextInt();
+       System.out.println( "Introduceti al doilea numar : ");
+       int secondNumber = scan.nextInt();
+       System.out.println( "Introduceti al treilea numar : ");
+       int thirdNumber = scan.nextInt();
+       System.out.println("Media numerelor introduse este : ");
+
+       Media Media = new Media();
+       System.out.println(Media.Media(firstNumber, secondNumber, thirdNumber ));
+       System.out.println("\n");
+
+       System.out.println("Tema nr 5 : \n");
+       System.out.println(print.PrintJava2());
+
+       System.out.println("Tema nr 6 : \n");
+       System.out.println( "Introduceti primul numar : ");
+       int firstNr = scan.nextInt();
+       System.out.println( "Introduceti al doilea numar : ");
+       int secondNr = scan.nextInt();
+       Rest Rest = new Rest();
+       System.out.println("Restul impartirii este : " + Rest.Rest(firstNr,secondNr) + "\n");
+
+
+       System.out.println("Tema nr 7 : \n");
+       System.out.println("Introduceti temperatura in Fahrenheit : ");
+       float Tempaa = scan.nextInt();
+       TempF TempFR = new TempF();
+
+       System.out.println(Tempaa);
+       System.out.println("Temperatura in grade Celsius este  : " + TempFR.TempF(Tempaa) + "\n");
+
+       System.out.println("Tema nr 8 : \n");
+       System.out.println("Introduceti distanta in inch  : ");
+       double inch = scan.nextInt();
+       Distance Metri = new Distance();
+       System.out.println("Distanta in metri este : " + Metri.Distance(inch) + "\n");
+
+       System.out.println("Tema nr 9 : \n");
+       System.out.println("Introduceti distanta in metri  : ");
+       double metri = scan.nextInt();
+       System.out.println("Introduceti ora : ");
+       double ora = scan.nextInt();
+       System.out.println("Introduceti minutele  : ");
+       double minute = scan.nextInt();
+       System.out.println("Introduceti secundele  : ");
+       double secunde = scan.nextInt();
+       Viteza speed = new Viteza()  ;
+       System.out.println("Viteza in metri pe secunda este  : " + speed.Viteza(metri, ora,minute, secunde) + "\n");
+       Viteza1 speedkm = new Viteza1();
+       System.out.println("Viteza in km pe ora este  : " + speedkm.Viteza1(metri, ora,minute, secunde) + "\n");
+       Viteza3 speedmph = new Viteza3();
+       System.out.println("Viteza in mph pe ora este  : " + speedmph.Viteza3(metri, ora,minute, secunde) + "\n");
     }
-}
+    }
+
+
+
+
+
