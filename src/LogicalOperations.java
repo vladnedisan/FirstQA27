@@ -83,17 +83,14 @@ public class LogicalOperations {
             return false;
     }
 
-    public int GreatNumber7(int num11, int num12, int num13) {
-        int max = num11;
-
-        if (num12 > max) {
-            max = num12;
+    public int maxNumber(int num1, int num2, int num3) {
+        int max = num1;
+        if (num2 > max) {
+            max = num2;
         }
-
-        if (num13 > max) {
-            max = num13;
+        if (num3 > max) {
+            max = num3;
         }
-
         return max;
     }
 }

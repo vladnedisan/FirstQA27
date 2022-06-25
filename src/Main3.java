@@ -53,7 +53,8 @@ public class Main3 {
         int age = scan1.nextInt();
         System.out.println(op.isEligibleToVote(age));
         System.out.println("\n");
-        System.out.println("Tema nr 11 : \n");
+
+        System.out.println("Tema nr 11: \n");
         Scanner x1 = new Scanner(System.in);
         System.out.print("Enter first number: ");
         int nr1 = x1.nextInt();
@@ -63,7 +64,6 @@ public class Main3 {
         Scanner z1 = new Scanner(System.in);
         System.out.print("Enter third number: ");
         int nr3 = z1.nextInt();
-        System.out.println(op.GreatNumber7(nr1, nr2, nr3) + '\n');
-
+        System.out.println(op.maxNumber(nr1, nr2, nr3));
     }
 }
