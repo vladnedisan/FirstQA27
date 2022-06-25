@@ -1,11 +1,8 @@
 package Lab10;
 
-import java.time.chrono.MinguoChronology;
-
 public class Distance {
-    public static double Distance(double a) {
-      double Metri = a*2.54;
-        return  Metri;
-
+    public static double distanceCalculation(double a) {
+        double meter = a * 2.54;
+        return meter;
     }
 }
