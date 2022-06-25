@@ -1,3 +1,5 @@
+package Lab10;
+
 public class PrintJ {
     public String PrintJava() {
        String face =(

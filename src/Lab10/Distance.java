@@ -1,3 +1,5 @@
+package Lab10;
+
 import java.time.chrono.MinguoChronology;
 
 public class Distance {

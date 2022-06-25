@@ -1,3 +1,5 @@
+import Lab10.*;
+
 import java.util.Scanner;
 
 public class Main {
@@ -11,7 +13,7 @@ public class Main {
         System.out.println("Vlad Nedisan");
         System.out.println('\n');
         // Ex 2 - sum of two numbers
-        System.out.println("Homework Lab9 - Java - Ex 2 - Sum of 2 numbers ");
+        System.out.println("Homework Lab9 - Java - Ex 2 - Calculator.Sum of 2 numbers ");
         System.out.println('\n');
         int number1 = 6;
         System.out.println("First number is : " + number1 );
@@ -98,16 +100,16 @@ public class Main {
 // Tema Laborator 10
        System.out.println("Tema nr 2 : \n");
 
-       Sum suma = new Sum();
+       Calculator.Sum suma = new Calculator.Sum();
        System.out.println("Suma numerelor este : " +(suma.sum(3,4)) );
 
-       Substract substr = new Substract();
+       Calculator.Substract substr = new Calculator.Substract();
        System.out.println("Scaderea numerelor este : " +(substr.substract(9, 7)) );
 
-       Divide imp = new Divide();
+       Calculator.Divide imp = new Calculator.Divide();
        System.out.println("Impartirea numerelor este : " + (imp.divide(9,2)));
 
-       Multiplication inm = new Multiplication();
+       Calculator.Multiplication inm = new Calculator.Multiplication();
        System.out.println("Inmultirea numerelor este : " + (inm.multiplication(4,5))+ "\n");
 
        System.out.println("Tema nr 3 : \n");
@@ -124,9 +126,9 @@ public class Main {
        int secondNumber = scan.nextInt();
        System.out.println( "Introduceti al treilea numar : ");
        int thirdNumber = scan.nextInt();
-       System.out.println("Media numerelor introduse este : ");
+       System.out.println("Calculator.Media numerelor introduse este : ");
 
-       Media Media = new Media();
+       Calculator.Media Media = new Calculator.Media();
        System.out.println(Media.Media(firstNumber, secondNumber, thirdNumber ));
        System.out.println("\n");
 
@@ -138,7 +140,7 @@ public class Main {
        int firstNr = scan.nextInt();
        System.out.println( "Introduceti al doilea numar : ");
        int secondNr = scan.nextInt();
-       Rest Rest = new Rest();
+       Calculator.Rest Rest = new Calculator.Rest();
        System.out.println("Restul impartirii este : " + Rest.Rest(firstNr,secondNr) + "\n");
 
 
@@ -165,12 +167,12 @@ public class Main {
        double minute = scan.nextInt();
        System.out.println("Introduceti secundele  : ");
        double secunde = scan.nextInt();
-       Viteza speed = new Viteza()  ;
-       System.out.println("Viteza in metri pe secunda este  : " + speed.Viteza(metri, ora,minute, secunde) + "\n");
+       TempF.Viteza speed = new TempF.Viteza()  ;
+       System.out.println("Lab10.TempF.Viteza in metri pe secunda este  : " + speed.Viteza(metri, ora,minute, secunde) + "\n");
        Viteza1 speedkm = new Viteza1();
-       System.out.println("Viteza in km pe ora este  : " + speedkm.Viteza1(metri, ora,minute, secunde) + "\n");
+       System.out.println("Lab10.TempF.Viteza in km pe ora este  : " + speedkm.Viteza1(metri, ora,minute, secunde) + "\n");
        Viteza3 speedmph = new Viteza3();
-       System.out.println("Viteza in mph pe ora este  : " + speedmph.Viteza3(metri, ora,minute, secunde) + "\n");
+       System.out.println("Lab10.TempF.Viteza in mph pe ora este  : " + speedmph.Viteza3(metri, ora,minute, secunde) + "\n");
     }
     }
 
