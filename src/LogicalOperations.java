@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class LogicalOperations {
 
     public int getGreaterNumber(int first, int second) {
@@ -93,4 +95,133 @@ public class LogicalOperations {
         }
         return max;
     }
-}
+
+    public void printToHundred(int x) {
+        for (int i = x; i <= 100; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public double sumAndAverage() {
+        int sum = 0;
+        for (int i = 1; i <= 100; i++) {
+            sum += i;
+            System.out.println(sum);
+        }
+        return sum / 100d;
+    }
+
+    public double getAverageInInterval(int start, int finish) {
+
+        int sum = 0;
+        double count = 0;
+        while (start <= finish) {
+            sum = sum + start;
+            start++;
+            count++;
+        }
+
+        return (sum / count);
+    }
+
+    public double getAverageForEvenInInterval(int start1, int finish1) {
+        int sum = 0;
+        double count = 0;
+        while (start1 <= finish1) {
+            if (start1 % 2 == 0) {
+                sum = sum + start1;
+                count++;
+            }
+            start1++;
+
+        }
+        System.out.println(sum);
+        return (sum / count);
+    }
+
+//Tema 1
+    public int countTo100() {
+        int count = 0;
+        for (int start = 21; start <= 100; start++) {
+            count++;
+        }
+        return count;
+    }
+//Tema 2
+    public int countToMinus100() {
+        int count = 0;
+        for (int start = 2; start >= -100; start--) {
+            count++;
+        }
+        return count;
+    }
+//Tema 3
+    public int countBetweenTwoNr(){
+        int count = 0;
+        int y = 9;
+        for( int x =3; x<=y; x++) {
+            count++;
+        }
+        return count;
+           }
+//Tema  4
+public int countToBiggestNr(){
+        int count = 0;
+        int x = 10;
+        int y = 7;
+        if (x<y)
+            for (int i=x;i<y;i++){
+                count++;}
+            else
+                for ( int j=y; j<x; j++){
+                    count++;}
+                return count;
+    }
+//Tema 5
+    public int evenNrTo100(){
+        int count =0;
+        for (int i = 1; i <=100; i++) {
+           if (i % 2 == 0)
+               count++;
+
+        }
+        return count;
+    }
+//Tema 6
+    public int notEvemNrTo100(){
+        int count = 0;
+        for (int i = 1; i <=100; i++) {
+            if (i % 2 != 0)
+                count++;
+
+        }
+        return count;
+    }
+//Tema 7
+    public int sumTo100(){
+        int sum = 0;
+        for (int i=1;i<=100; i++) {
+            sum=sum+i;
+        }
+    return sum;
+    }
+//Tema 8
+    public double sumAndAverageTema() {
+        int sum = 0;
+        for (int i = 1; i <= 100; i++) {
+            sum += i;
+        }
+        return sum / 100d;
+    }
+//Tema 9
+ public static void printAsterisk(){
+        for (int i=7;i>=0; i--){
+            for (int j=i;j>=0; j--)
+            System.out.print("*");
+            System.out.println();
+        }
+            }
+    }
+
+
+
