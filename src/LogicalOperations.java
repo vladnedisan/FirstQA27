@@ -344,8 +344,39 @@ public class LogicalOperations {
             i++;
         }
     }
+
+    public int[] populateArrayUpToNumber(int number) {
+        int[] array = new int[number];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+        return array;
+    }
+
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+
+    public double getAverageFromArray(int[] array) {
+        double sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum / array.length;
+    }
+
+    public boolean isValueInArray(String[] array, String value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(value)) {
+                return true;
+            }
+        }
+        return false;
+
+//public int getPossitionOfValueFromArray(){
+
+    }
 }
-
-
-
 
