@@ -470,7 +470,6 @@ public class LogicalOperations {
         }
         return secondLowestNr;
     }
-
     //Tema 10
     public int[] copyArray(int[] array1, int[] array2) {
         for (int i = 0; i < array1.length; i++) {
