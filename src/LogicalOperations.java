@@ -1,3 +1,7 @@
+import java.lang.reflect.Array;
+import java.sql.SQLOutput;
+import java.util.Arrays;
+
 public class LogicalOperations {
 
     public int getGreaterNumber(int first, int second) {
@@ -305,7 +309,7 @@ public class LogicalOperations {
         return (sum / count);
     }
 
-    //Tema
+    //Tema 9
     public static void nrFibonacci() {
         int num1 = 0, num2 = 1;
         int i = 1;
@@ -318,6 +322,7 @@ public class LogicalOperations {
         }
     }
 
+    // Tema 10
     public static void cozaLozaWoza() {
         int i = 1;
         while (i <= 110) {
@@ -367,6 +372,39 @@ public class LogicalOperations {
         return sum / array.length;
     }
 
+//public int getPossitionOfValueFromArray(){
+
+    //Tema Array
+    //Tema 2
+    public int[] populateArrayUpTo100(int number) {
+        int[] array = new int[number];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+        return array;
+    }
+
+    //Tema 3
+    public int[] populateArrayUpToEven100(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (i % 2 == 0) {
+                array[i] += i;
+                System.out.print(array[i] + " ");
+            }
+        }
+        return array;
+    }
+
+    //Tema 4
+    public double getAverageFromArrayT(int[] array) {
+        double sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum / array.length;
+    }
+
+    //Tema 5
     public boolean isValueInArray(String[] array, String value) {
         for (int i = 0; i < array.length; i++) {
             if (array[i].equals(value)) {
@@ -374,9 +412,76 @@ public class LogicalOperations {
             }
         }
         return false;
+    }
 
-//public int getPossitionOfValueFromArray(){
+    //Tema6
 
+    public boolean isNumberInArrayNr(int[] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                System.out.println("Numarul se afla la pozitia: " + i);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void printSymbols(int[] array) {
+        for (int i = 0; i < 100; i++) {
+            array[i] = i + 1;
+        }
+        for (int i = 1; i <= 100; i++) {
+            if (i % 10 != 0) {
+                System.out.print("_");
+            } else {
+                System.out.println("_");
+            }
+        }
+    }
+
+    //Tema 8
+
+    public void  isValueInArrayNr2(int[] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                for (int j = i; j < array.length - 1; j++) {
+                    array[j] = array[j + 1];
+                }
+            }
+        }
+
+        System.out.println("Unique elements: ");
+        for (int i = 0; i < array.length - 1; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+
+    //Tema 9
+    public int populateArrayToNr3(int[] array) {
+        int lowestNR = 2147483647;
+        int secondLowestNr = 2147483647;
+        for (int i = 0; i < array.length; i++) {
+            if (lowestNR > array[i]) {
+                secondLowestNr = lowestNR;
+                lowestNR = array[i];
+            } else if (array[i] < secondLowestNr) {
+                secondLowestNr = array[i];
+            }
+        }
+        return secondLowestNr;
+    }
+
+    //Tema 10
+    public int[] copyArray(int[] array1, int[] array2) {
+        for (int i = 0; i < array1.length; i++) {
+            array2[i] = array1[i];
+            System.out.print(array2[i] + " ");
+        }
+        return array2;
     }
 }
+
+
+
+
 
