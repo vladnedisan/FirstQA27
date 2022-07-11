@@ -27,9 +27,9 @@ public class AppMain {
         activity.running();
         activity.sleeping();
         activity.swimming();
-
         Vet doctor = new Vet();
         System.out.println("Vet name is: " + doctor.vetName);
         System.out.println("Vet speciality is: " + doctor.specialized);
     }
 }
+
