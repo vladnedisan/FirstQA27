@@ -1,6 +1,8 @@
 import java.lang.reflect.Array;
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class LogicalOperations {
 
@@ -441,7 +443,7 @@ public class LogicalOperations {
 
     //Tema 8
 
-    public void  isValueInArrayNr2(int[] array, int value) {
+    public void isValueInArrayNr2(int[] array, int value) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value) {
                 for (int j = i; j < array.length - 1; j++) {
@@ -470,6 +472,7 @@ public class LogicalOperations {
         }
         return secondLowestNr;
     }
+
     //Tema 10
     public int[] copyArray(int[] array1, int[] array2) {
         for (int i = 0; i < array1.length; i++) {
@@ -477,6 +480,89 @@ public class LogicalOperations {
             System.out.print(array2[i] + " ");
         }
         return array2;
+    }
+
+    //Tema 4 Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze, pe rand, toate
+    // valorile din lista, dar invers(de la capat la inceput).
+    public void printNumbersBackwardsFromList(List<Integer> myList) {
+        for (int i = myList.size() - 1; i >= 0; i--) {
+            System.out.println(myList.get(i));
+        }
+    }
+
+    //Tema 1 Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru sa fie
+    // o lista de numere, si celalalt un numar (real sau intreg).
+    // Metoda sa adauge numarul primit ca si parametru la final de lista.
+    public void addNumberAtTheEnd(List<Integer> myList, int a) {
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
+        myList.add(a);
+        System.out.println(myList);
+    }
+
+    //Tema 2 Scrieti o metoda Java, care sa primeasca parametru o Lista, si sa afiseze,
+    // pe rand, toate valorile din lista, fiecare pe rand nou.
+    public void printNumbersFromList(List<Integer> myList) {
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
+    }
+
+    //Tema 3 Scrieti o metoda Java, care sa primeasca doi parametrii: un parametru de tip Lista,
+    // iar celalalt un numar intreg. Sa se parcurga lista si sa afiseze, pe rand,
+    // toate valorile din lista, fiecare pe rand nou, pornind de la numarul intreg primit ca si parametru.
+    public void printFromGivenNr(List<Integer> myList, int a) {
+        for (int i = a - 1; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
+    }
+    //Tema 5 Scrieti o metoda Java, care sa primeasca trei parametrii: unul de tip Lista
+    // de String-uri, unul de tip intreg, si unul de tip String. Metoda sa adauge parametrul
+    // de tip String in lista primita,
+    // iar parametrul de tip intreg reprezinta pozitia la care sa fie pus acel String.
+
+    public void addStringInPositionOfIntNumber(List<String> myList, int a, String value) {
+        myList.add(a, value);
+        System.out.println(myList);
+    }
+
+    //Tema 6 Scrieti o metoda Java, care sa primeasca doi parametrii. Primul dintre ei
+    // va fi o Lista, iar metoda sa
+    // ia al doilea parametru si sa il adauge pe prima pozitie din lista.
+    public void addNumberAtTheBeginning(List<Integer> myList, int b) {
+        myList.add(0, 7);
+        System.out.println(myList);
+    }
+
+    //Tema 7 Scrieti o metoda Java care sa primeasca parametru o Lista,
+    // si sa afiseze ce valori are lista,
+    // si ce pe ce pozitie. (Ex: “Pe pozitia 1 valoare este 4”
+    public static void main(String[] args) {
+        ArrayList<String> arrlist = new ArrayList<>();
+        arrlist.add("test");
+        arrlist.add("machine");
+        arrlist.add("auto");
+        arrlist.add("hello");
+        printNumberAndIndex(arrlist);
+    }
+
+    public static void printNumberAndIndex(ArrayList<String> list) {
+        for (String value : list) {
+            System.out.println("Elementul " + value + " se afla la pozitia " + list.indexOf(value));
+        }
+    }
+
+    //Tema 8 Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
+    public void getHighestNumberFromList(List<Integer> myList) {
+        List<Integer> arrayList = Arrays.asList(5, 3, 15, 234, 114, 150, 33, 45, 101, 103);
+        Integer maxValue1 = 0;
+        for (int i = 0; i < arrayList.size(); i++) {
+            if (arrayList.get(i) > maxValue1)
+                maxValue1 = arrayList.get(i);
+        }
+        System.out.println("The maximum value is "
+                + maxValue1);
     }
 }
 

@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main4 {
 
 
@@ -56,5 +59,14 @@ public class Main4 {
         System.out.println("Tema nr 10 : \n");
         op.cozaLozaWoza();
 
+    }
+
+    public static class Main6 {
+        public static void main(String[] args) {
+            List<Integer> myList = new ArrayList<>();
+            myList.add(3);
+            System.out.println(myList.size());
+
+        }
     }
 }
