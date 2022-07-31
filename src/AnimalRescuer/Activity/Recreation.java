@@ -1,4 +1,4 @@
-package AnimalRescuer;
+package AnimalRescuer.Activity;
 
 public class Recreation {
     public void running() {

@@ -1,17 +1,16 @@
-package AnimalRescuer;
+package AnimalRescuer.Food;
 
-public class DogFood {
+public class Food {
     String nameFood;
-    int quantity ;
-    int price ;
+    int quantity;
+    int price;
     boolean availability;
 
-
-    public String nameFood() {
+    public String getNameFood() {
         return nameFood;
     }
 
-    public void setAdopterName(String nameFood) {
+    public void setNameFood(String nameFood) {
         this.nameFood = nameFood;
     }
 
@@ -22,6 +21,7 @@ public class DogFood {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
     public int getPrice() {
         return price;
     }
@@ -29,12 +29,12 @@ public class DogFood {
     public void setPrice(int price) {
         this.price = price;
     }
-    public boolean getAvailability() {
+
+    public boolean isAvailability() {
         return availability;
     }
 
     public void setAvailability(boolean availability) {
         this.availability = availability;
     }
-
 }
