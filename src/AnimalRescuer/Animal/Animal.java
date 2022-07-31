@@ -93,16 +93,12 @@ public abstract class Animal {
     //  public abstract void eat(); //{
     // System.out.println("eating dog food");
     //}
-
     //public void sleep() {
     //   System.out.println("Snores..zzzz");
     // }
-
     // public void speak() {
     //    System.out.println("Ham!");
     // }
-
-
     public abstract void sound();
 
     public abstract void play();
