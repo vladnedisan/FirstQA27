@@ -31,5 +31,8 @@ public class Adopter extends Atributes {
     public void setMoneyRon(int moneyRon) {
         this.moneyRon = moneyRon;
     }
+    public void talk() {
+        System.out.println("Good Morning! Vorbiti si romaneste?");
+    }
 }
 

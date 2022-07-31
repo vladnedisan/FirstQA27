@@ -1,7 +1,10 @@
 package AnimalRescuer;
 
 import AnimalRescuer.Activity.Recreation;
+import AnimalRescuer.Animal.Birds.Parrot;
+import AnimalRescuer.Animal.Cat.RussianBlue;
 import AnimalRescuer.Animal.Dog.Dog;
+import AnimalRescuer.Animal.Dog.Labrador;
 import AnimalRescuer.Food.DogFood.DryFood;
 import AnimalRescuer.Food.DogFood.WetFood;
 import AnimalRescuer.People.Atributes.Adopter;
@@ -20,7 +23,7 @@ public class AppMain {
         System.out.println("New dog name is : " + rex.getName());
         System.out.print("Dog is playing: ");
         rex.play();
-        Dog grivey = new Dog();
+        Labrador  grivey = new Labrador();
         grivey.setName("Grivey");
         System.out.println("New dog's name is " + grivey.getName());
         grivey.setHealthStatusScale(5);
@@ -30,10 +33,12 @@ public class AppMain {
         System.out.println("Health status scale is: " + grivey.getHungerStatusScale());
         grivey.eat();
         System.out.println("Spirit status scale is: " + grivey.getSpiritStatusScale());
+        grivey.play();
 
         Adopter person = new Adopter();
         person.setName("Pop Mihai");
         System.out.println("Adopter name is: " + person.getName());
+        person.talk();
         person.setWorkingStatus("employed");
         System.out.println("Adopter status  is: " + person.getWorkingStatus());
         person.setAdoption(1);
@@ -62,6 +67,17 @@ public class AppMain {
         System.out.println("Best wet food for dogs is :  " + wetFood.getNameFood());
         wetFood.setRecipent("Can");
         System.out.println("Best way to keep the wet food fresh is in a unopened :  " + wetFood.getRecipent());
+        RussianBlue bella = new RussianBlue();
+        bella.setName("Kitty");
+        System.out.println("Cat name is: " + bella.getName());
+        bella.eat();
+        bella.play();
+        bella.speak();
+        Parrot birdie = new Parrot();
+        birdie.setName("Abby");
+        System.out.println("Parrot name is: " + birdie.getName());
+        birdie.speak();
+        birdie.play();
         //  Duck ducky = new Duck();
         //  ducky.setName("Ducky");
         // ducky.sleep();

@@ -14,7 +14,7 @@ public class Vet extends Atributes {
     }
 
     public void talk() {
-        System.out.println("Hello, nice to see you again");
+        System.out.println("Hello! Welcome back, how can we help you this time?");
     }
 
 }

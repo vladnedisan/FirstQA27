@@ -78,6 +78,10 @@ public class Animal {
         System.out.println("Ham!");
     }
 
+    public void play() {
+        System.out.println("fetch");
+    }
+
     public int getAge() {
         return age;
     }
@@ -102,7 +106,5 @@ public class Animal {
         this.weight = weight;
     }
 
-    public void play() {
-        System.out.println("fetch");
-    }
+
 }

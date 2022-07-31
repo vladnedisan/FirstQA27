@@ -37,4 +37,7 @@ public class People {
     public void setHeightCm(int heightCm) {
         this.heightCm = heightCm;
     }
+    public void talk() {
+        System.out.println("Hello, nice to see you again");
+    }
 }
