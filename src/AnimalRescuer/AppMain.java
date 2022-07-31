@@ -23,9 +23,10 @@ public class AppMain {
         System.out.println("New dog name is : " + rex.getName());
         System.out.print("Dog is playing: ");
         rex.play();
-        Labrador  grivey = new Labrador();
-
+        Labrador grivey = new Labrador();
+        System.out.print("Dog is playing: ");
         grivey.play();
+        System.out.print("Dog is making sound: ");
         grivey.sound();
 
         grivey.setName("Grivey");
@@ -35,8 +36,10 @@ public class AppMain {
         grivey.setSpiritStatusScale(3);
         System.out.println("Hunger status scale is: " + grivey.getHealthStatusScale());
         System.out.println("Health status scale is: " + grivey.getHungerStatusScale());
+        System.out.print("Dog is eating: ");
         grivey.eat();
         System.out.println("Spirit status scale is: " + grivey.getSpiritStatusScale());
+        System.out.print("Dog is : ");
         grivey.play();
 
         Adopter person = new Adopter();
@@ -74,13 +77,18 @@ public class AppMain {
         RussianBlue bella = new RussianBlue();
         bella.setName("Kitty");
         System.out.println("Cat name is: " + bella.getName());
+        System.out.print("Cat is eating a: ");
         bella.eat();
+        System.out.print("Cat is playing : ");
         bella.play();
+        System.out.print("Cat is making a sound: ");
         bella.sound();
         Parrot birdie = new Parrot();
         birdie.setName("Abby");
         System.out.println("Parrot name is: " + birdie.getName());
+        System.out.print("Parrot is singing : ");
         birdie.sound();
+        System.out.print("Parrot is playing : ");
         birdie.play();
     }
 }
