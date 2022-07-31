@@ -1,11 +1,10 @@
-import java.util.Scanner;
-
 public class Main7 {
 
     public static void main(String[] args) {
-        Read read = new Read();
-        int x = read.getInt();
-        System.out.println(x);
-
+        LogicalOperations op = new LogicalOperations();
+        int[] array = {31, 4, 3, 11, 2, 8};
+        op.readArrayIndex(array, 2);
+        op.wait(5);
+        System.out.println("test");
     }
 }

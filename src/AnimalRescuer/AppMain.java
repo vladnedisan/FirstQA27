@@ -24,6 +24,10 @@ public class AppMain {
         System.out.print("Dog is playing: ");
         rex.play();
         Labrador  grivey = new Labrador();
+
+        grivey.play();
+        grivey.sound();
+
         grivey.setName("Grivey");
         System.out.println("New dog's name is " + grivey.getName());
         grivey.setHealthStatusScale(5);
@@ -72,17 +76,12 @@ public class AppMain {
         System.out.println("Cat name is: " + bella.getName());
         bella.eat();
         bella.play();
-        bella.speak();
+        bella.sound();
         Parrot birdie = new Parrot();
         birdie.setName("Abby");
         System.out.println("Parrot name is: " + birdie.getName());
-        birdie.speak();
+        birdie.sound();
         birdie.play();
-        //  Duck ducky = new Duck();
-        //  ducky.setName("Ducky");
-        // ducky.sleep();
-
-
     }
 }
 
